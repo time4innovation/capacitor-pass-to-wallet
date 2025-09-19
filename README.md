@@ -22,9 +22,9 @@ npx cap sync
 
 <docgen-index>
 
-- [`addToWallet(...)`](#addtowallet)
-- [`addMultipleToWallet(...)`](#addmultipletowallet)
-- [`passExists(...)`](#passexists)
+* [`addToWallet(...)`](#addtowallet)
+* [`addMultipleToWallet(...)`](#addmultipletowallet)
+* [`passExists(...)`](#passexists)
 
 </docgen-index>
 
@@ -43,7 +43,8 @@ addToWallet(options: { base64: string; }) => Promise<{ value: string; }>
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
----
+--------------------
+
 
 ### addMultipleToWallet(...)
 
@@ -57,7 +58,8 @@ addMultipleToWallet(options: { base64: string[]; }) => Promise<{ value: string; 
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
----
+--------------------
+
 
 ### passExists(...)
 
@@ -71,6 +73,6 @@ passExists(options: { base64: string; }) => Promise<{ passExists: boolean; }>
 
 **Returns:** <code>Promise&lt;{ passExists: boolean; }&gt;</code>
 
----
+--------------------
 
 </docgen-api>
