@@ -1,0 +1,63 @@
+{
+  "api": {
+    "name": "CapacitorPassToWalletPlugin",
+    "slug": "capacitorpasstowalletplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "addToWallet",
+        "signature": "(options: { base64: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ base64: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addtowallet"
+      },
+      {
+        "name": "addMultipleToWallet",
+        "signature": "(options: { base64: string[]; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ base64: string[]; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addmultipletowallet"
+      },
+      {
+        "name": "passExists",
+        "signature": "(options: { base64: string; }) => Promise<{ passExists: boolean; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ base64: string; }"
+          }
+        ],
+        "returns": "Promise<{ passExists: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "passexists"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

@@ -1,13 +1,12 @@
+import resolve from '@rollup/plugin-node-resolve';
+
 export default {
   input: 'dist/esm/index.js',
   output: [
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorCapacitorPassToWallet',
-      globals: {
-        '@capacitor/core': 'capacitorExports',
-      },
+      name: 'CapacitorPassToWallet',
       sourcemap: true,
       inlineDynamicImports: true,
     },
@@ -18,5 +17,14 @@ export default {
       inlineDynamicImports: true,
     },
   ],
-  external: ['@capacitor/core'],
+
+  plugins: [
+    resolve({
+      browser: true,
+      preferBuiltins: false,
+    }),
+  ],
+
+  // IMPORTANT: do NOT externalize capacitor
+  external: [],
 };
