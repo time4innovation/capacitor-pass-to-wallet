@@ -19,7 +19,9 @@ public class CapacitorPassToWalletPlugin: CAPPlugin {
                     call.resolve([
                         "value": implementation.echo("SUCCESS")
                     ]);
-                    self.bridge?.viewController?.present(vc, animated: true, completion: nil);
+                    DispatchQueue.main.async {
+                        self.bridge?.viewController?.present(vc, animated: true, completion: nil);
+                    }
                 }
             } else {
                 let error =
